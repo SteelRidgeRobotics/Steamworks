@@ -98,6 +98,7 @@ void Drivetrain::encoderPosition(double left, double right){
 	fl->SetControlMode(CANTalon::kPosition);
 	fr->SetControlMode(CANTalon::kPosition);
 
+	fr->SetSensorDirection(false);
 	fr->SetClosedLoopOutputDirection(true);
 
 	//fl->SetPosition(0.0);
@@ -120,6 +121,7 @@ void Drivetrain::encoderSpeed(double leftspeed, double rightspeed){
 	fl->SetControlMode(CANTalon::kSpeed);
 	fr->SetControlMode(CANTalon::kSpeed);
 
+	fr->SetSensorDirection(false);
 	fr->SetClosedLoopOutputDirection(true);
 	fr->SetInverted(true);
 

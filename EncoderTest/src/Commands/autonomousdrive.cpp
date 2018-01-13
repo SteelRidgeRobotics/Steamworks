@@ -33,7 +33,7 @@ void autonomousdrive::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void autonomousdrive::Execute() {
-	Robot::drivetrain->encoderPosition(50,50);
+	Robot::drivetrain->encoderPosition(10,10);
 	m_done = Robot::drivetrain->isMove();
 }
 
